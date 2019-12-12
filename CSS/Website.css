@@ -9,7 +9,7 @@ body {
     margin-left: 0;
     background-color: #795548;
     position: fixed; /*固定在顶部*/
-    top: 0; /*离顶部的距离为0*/
+    top: 0px; /*离顶部的距离为0*/
     margin-bottom: 5px;
 }
 
@@ -21,7 +21,7 @@ body {
     overflow: hidden;
     margin-left: 40%;
     margin-top: 0;
-    padding: 0;
+    padding: 20px;
 
 }
 
@@ -60,7 +60,6 @@ body {
 
 .top ul li ul li {
     /* 二级菜单li内容的显示 */
-
     float: none;
     text-align: center;
 }
@@ -74,5 +73,5 @@ body {
     position: absolute;
     left: 20%;
     width: 15%;
-    padding-top: 0px;
+    padding-top: 10px;
 }
