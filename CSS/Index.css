@@ -1,3 +1,7 @@
+@import url('http://www.scp-wiki.net/local--files/component:theme/font-bauhaus.css');
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css');
+@import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 .price{
     margin-left: 2%;
     overflow:hidden;
