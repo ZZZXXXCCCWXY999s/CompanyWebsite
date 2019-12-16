@@ -202,3 +202,7 @@ class Lb {
         }).bind(this), this.speed + 50);
     }
 }
+
+function show_more(){
+
+}

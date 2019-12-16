@@ -1,18 +1,13 @@
-body {
-    background-color: white;
-}
-
 .top {
     /* 设置宽度高度背景颜色 */
     height: 80px; /*高度改为自动高度*/
     width: 1920px;
-    margin-left: 0;
     background-color: #795548;
     position: fixed; /*固定在顶部*/
     top: 0px; /*离顶部的距离为0*/
     margin-bottom: 5px;
+    z-index: 3;
     left: 0px;
-    z-index: 1;
 }
 
 .top ul {
@@ -21,10 +16,9 @@ body {
     list-style-type: none;
     white-space: nowrap;
     overflow: hidden;
-    margin-left: 35%;
+    margin-left: 25%;
     margin-top: 0;
     padding: 20px;
-
 }
 
 .top li {
@@ -32,6 +26,7 @@ body {
     margin-right: 2%; /* 两个li之间的距离*/
     font-size: 20px;
     position: relative;
+    width: 120px;
     /*overflow: hidden;*/
 }
 
@@ -48,22 +43,26 @@ body {
 
 .top li a:hover {
     /* 鼠标选中时背景变为黑色 */
-    background: rgb(189, 181, 181);
+
 }
 
 .top ul li ul {
     /* 设置二级菜单 */
-    margin-left: -0.2px;
-    background: rgb(189, 181, 181);
+    background: rgb(110, 105, 105);
     position: relative;
+    width: auto;
+    left: -30px;
+    float: left;
     display: none; /* 默认隐藏二级菜单的内容 */
-
 }
 
 .top ul li ul li {
     /* 二级菜单li内容的显示 */
     float: none;
     text-align: center;
+    position: relative;
+    width: auto;
+    color: black;
 }
 
 .top ul li:hover ul {
@@ -71,9 +70,13 @@ body {
     display: block;
 }
 
+.top ul li ul li:hover {
+    background-color: white;
+}
+
 #top_logo {
     position: absolute;
-    left: 20%;
+    left: 15%;
     width: 15%;
     padding-top: 10px;
 }
@@ -83,14 +86,15 @@ body {
     background-color: #795548;
     top: +60px;
     width: 1200px;
-    height: 5000px;
+    height: 3000px;
 }
 
-.img{
+.img {
     position: absolute;
     width: 100%;
 }
-.imgBox{
+
+.imgBox {
     position: absolute;
     border-top: 2px solid cadetblue;
     width: 100%;
@@ -99,7 +103,7 @@ body {
 
 }
 
-.imgBox img{
+.imgBox img {
     width: 60%;
     height: 300px;
     margin: 0 auto;
@@ -107,19 +111,19 @@ body {
 
 }
 
-.img1{
+.img1 {
     display: block;
 }
 
-.img2{
+.img2 {
     display: none;
 }
 
-.img3{
+.img3 {
     display: none;
 }
 
-.price1{
+.price1 {
     position: absolute;
     left: 40px;
     width: 250px;
@@ -128,13 +132,13 @@ body {
     border: 1px solid white;
 }
 
-#image{
+.image {
     position: relative;
     width: 100%;
     height: 75%;
 }
 
-.price2{
+.price2 {
     position: absolute;
     left: 320px;
     width: 250px;
@@ -143,7 +147,7 @@ body {
     border: 1px solid white;
 }
 
-.price3{
+.price3 {
     position: absolute;
     left: 610px;
     width: 250px;
@@ -152,7 +156,7 @@ body {
     border: 1px solid white;
 }
 
-.price4{
+.price4 {
     position: absolute;
     left: 900px;
     width: 250px;
@@ -161,13 +165,233 @@ body {
     border: 1px solid white;
 }
 
-#Font1{
+.Font1 {
     font-size: 18px;
     position: relative;
 }
 
-#Font2{
+.Font2 {
     font-size: 14px;
     position: relative;
     top: -10px;
+}
+
+#about_us {
+    background-color: white;
+    position: absolute;
+    width: 1200px;
+    top: 1000px;
+    height: 680px;
+}
+
+#text1 {
+    text-align: left;
+    position: absolute;
+    background-color: white;
+    width: 1200px;
+}
+
+#show_more {
+    text-align: center;
+    color: white;
+}
+
+#about_us_img {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    left: 550px;
+    top: 20px;
+    border-radius: 15px;
+}
+
+#content2 {
+    position: absolute;
+    top: 700px;
+}
+
+#content3 {
+    position: absolute;
+    top: 2520px;
+    width: 1200px;
+    left: 0px;
+    background-image: url(../Images/Index/Star.png);
+    height: 300px;
+}
+
+#qiyejieshao1 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 60px;
+    top: 120px;
+    border-radius: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+#bubble1 {
+    position: absolute;
+    width: 160px;
+    height: 80px;
+    left: 20px;
+    border-radius: 20px;
+    background-color: white;
+    top: 170px;
+    text-align: center;
+}
+
+#qiyejieshao2 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 120px;
+    left: 260px;
+    border-radius: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+#bubble2 {
+    position: absolute;
+    width: 160px;
+    height: 80px;
+    left: 220px;
+    border-radius: 20px;
+    background-color: white;
+    top: 170px;
+    text-align: center;
+}
+
+#qiyejieshao3 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 120px;
+    left: 460px;
+    border-radius: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+#bubble3 {
+    position: absolute;
+    width: 160px;
+    height: 80px;
+    left: 420px;
+    border-radius: 20px;
+    background-color: white;
+    top: 170px;
+    text-align: center;
+}
+
+#qiyejieshao4 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 120px;
+    left: 660px;
+    border-radius: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+#bubble4 {
+    position: absolute;
+    width: 160px;
+    height: 80px;
+    left: 620px;
+    border-radius: 20px;
+    background-color: white;
+    top: 170px;
+    text-align: center;
+}
+
+#qiyejieshao5 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 120px;
+    left: 860px;
+    border-radius: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+#bubble5 {
+    position: absolute;
+    width: 160px;
+    height: 80px;
+    left: 820px;
+    border-radius: 20px;
+    background-color: white;
+    top: 170px;
+    text-align: center;
+}
+
+#qiyejieshao6 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 120px;
+    left: 1060px;
+    border-radius: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+#bubble6 {
+    position: absolute;
+    width: 160px;
+    height: 80px;
+    left: 1020px;
+    border-radius: 20px;
+    background-color: white;
+    top: 170px;
+    text-align: center;
+}
+
+#content4 {
+    background-color: #795548;
+    position: absolute;
+    width: 1200px;
+    height: 200px;
+    left: 0px;
+    top: 2900px;
+}
+
+#qiyexinwen {
+    position: absolute;
+    height: 140px;
+    width: 220px;
+    left: 100px;
+}
+
+#xiehuixinxi {
+    position: absolute;
+    height: 60px;
+    width: 300px;
+    left: 360px;
+}
+
+#shehuizeren {
+    position: absolute;
+    height: 60px;
+    width: 300px;
+    top: 82px;
+    left: 360px;
+}
+
+#qiyexinwen img {
+    position: absolute;
+    height: 140px;
+    width: 220px;
+    left: 20px;
+}
+
+#qiyexinwen img {
+    position: absolute;
+    height: 140px;
+    width: 220px;
+    left: 20px;
 }

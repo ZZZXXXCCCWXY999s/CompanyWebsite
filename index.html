@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="./CSS/lb.css">
     <script type="text/javascript" src="./JavaScript/index.js"></script>
 </head>
-<body>
-    <center id="body" style="background-color: white;">
+<body style="background-color: white">
+<center id="body" style="background-color: white;">
     <div class="top">
         <img src="./Images/Index/LOGO.png" id="top_logo">
         <ul>
-            <li><a href="./index.html">网站首页</a></li>
-            <li><a href="#">孵化中心</a>
+            <li id="index1"><a href="./index.html">网站首页</a></li>
+            <li id="index2"><a href="#">孵化中心</a>
                 <ul>
                     <li><a href="#">合作单位</a></li>
                     <li><a href="#">入驻须知</a></li>
@@ -25,7 +25,7 @@
                     <li><a href="#">工作机会</a></li>
                 </ul>
             </li>
-            <li><a href="#">业态洞察</a>
+            <li id="index3"><a href="#">业态洞察</a>
                 <ul>
                     <li><a href="#">图文展示，行业事实更新</a></li>
                     <li><a href="#">戴河打卡导航</a></li>
@@ -33,20 +33,20 @@
                     <li><a href="#">能带走的小岛味道</a></li>
                 </ul>
             </li>
-            <li><a href="#">电子商务中心</a>
+            <li id="index4"><a href="#">电子商务中心</a>
                 <ul>
                     <li><a href="#">图文名平台介绍</a></li>
                     <li><a href="#">进入各商城</a></li>
                 </ul>
             </li>
-            <li><a href="#">会展中心</a>
+            <li id="index5"><a href="#">会展中心</a>
                 <ul>
                     <li><a href="#">组织案例介绍</a></li>
                     <li><a href="#">参赛、获奖案例介绍</a></li>
                     <li><a href="#">政测法规</a></li>
                 </ul>
             </li>
-            <li><a href="#">北方瀛园</a>
+            <li id="index6"><a href="#">北方瀛园</a>
                 <ul>
                     <li><a href="#">平台图文介绍</a></li>
                     <li><a href="#">远方瀛园</a></li>
@@ -56,7 +56,7 @@
                     <li><a href="#">加盟须知</a></li>
                 </ul>
             </li>
-            <li><a href="#">关于我们</a>
+            <li id="index7"><a href="#">关于我们</a>
                 <ul>
                     <li><a href="#">企业简介</a></li>
                     <li><a href="#">合作说明</a></li>
@@ -65,13 +65,13 @@
             </li>
         </ul>
     </div>
-    <center id="content">
+    <div id="content">
         <div class="lb-box" id="lb-1">
             <!-- 轮播内容 -->
             <div class="lb-content">
                 <div class="lb-item active">
                     <a href="#">
-                        <img src="./Images/Index/Price01.png" alt="picture loss">
+                        <img src="./Images/Index/lb_img1.jpg" alt="picture loss">
                     </a>
                 </div>
                 <div class="lb-item">
@@ -105,42 +105,116 @@
         <h3 style="color: antiquewhite">国家级省级市级大赛获奖作品展示</h3>
         <div>
             <div class="price1">
-                <img src="Images/Index/Price01.png" id="image"/>
-                <p align="center" id="Font1">《心海如墨》水墨琉璃</p>
-                <p align="center" id="Font2">2019中国旅游商品大赛银奖</p>
+                <img src="Images/Index/Price01.png" class="image"/>
+                <p align="center" class="Font1">《心海如墨》水墨琉璃</p>
+                <p align="center" class="Font2">2019中国旅游商品大赛银奖</p>
             </div>
             <div class="price2">
-                <img src="Images/Index/Price02.png" id="image"/>
-                <p align="center" id="Font1">《心海如墨》水墨琉璃</p>
-                <p align="center" id="Font2">2019中国旅游商品大赛银奖</p>
+                <img src="Images/Index/Price02.png" class="image"/>
+                <p align="center" class="Font1">《心海如墨》水墨琉璃</p>
+                <p align="center" class="Font2">2019中国旅游商品大赛银奖</p>
             </div>
             <div class="price3">
-                <img src="Images/Index/Price03.png" id="image"/>
-                <p align="center" id="Font1">《心海如墨》水墨琉璃</p>
-                <p align="center" id="Font2">2019中国旅游商品大赛银奖</p>
+                <img src="Images/Index/Price03.png" class="image"/>
+                <p align="center" class="Font1">《心海如墨》水墨琉璃</p>
+                <p align="center" class="Font2">2019中国旅游商品大赛银奖</p>
             </div>
             <div class="price4">
-                <img src="Images/Index/Price04.png" id="image"/>
-                <p align="center" id="Font1">《心海如墨》水墨琉璃</p>
-                <p align="center" id="Font2">2019中国旅游商品大赛银奖</p>
+                <img src="Images/Index/Price04.png" class="image"/>
+                <p align="center" class="Font1">《心海如墨》水墨琉璃</p>
+                <p align="center" class="Font2">2019中国旅游商品大赛银奖</p>
             </div>
         </div>
-        <!--
-        <div>
-            <h2 style="font-weight: bold" align="center">关于我们</h2>
-            <h3 align="center">研发。生产。投融资</h3>
+        <div id="about_us">
+            <h2 style="font-size: 28px;color: #00BFFF; letter-spacing: 5px" align="center"><b>关于我们</b></h2>
+            <h3 align="center" style="font-size: 18px; color: #aaaaaa;position: relative;top: -10px">研发·生产·投融资</h3>
+            <div id="text1">
+                <b style="font-size: 20px; letter-spacing: 2px;">秦皇岛亚昕旅游商品企业孵化器有限公司</b>
+                <hr style="position: absolute; left: 0px; color: lightskyblue; height: 2px; background-color: lightskyblue; width: 420px"/>
+                <p>　　秦皇岛亚昕旅游商品企业孵化器是一家专注于旅游商</p>
+                <p>品研发、生产、投融资的孵化器性质企业，是河北省第一</p>
+                <p>家旅游商品企业孵化器。拥有专业的专家团队和机构入驻</p>
+                <p>合作，进行旅游商品开发、产品定位、品牌故事、VI视觉</p>
+                <p>设计、商标注册、专利申请、金融服务、互联网培训、线</p>
+                <p>上 　店铺托管、微信小程序开发等业务开发。同时，依托</p>
+                <p>秦皇岛市旅游协会，为秦皇岛市旅游商品企业提供品牌打</p>
+                <p>造、产品升级等专业帮扶，全面推动研、产、销一体化</p>
+                <p>发展。以“秦皇岛礼物”品牌为引领，积极研发具有地域</p>
+                <p>文化特色的精品地方特色商品，已推出百余种精品旅游商</p>
+                <p>品，较好满足了广大游客的购物需求，对促进全市旅游业</p>
+                <p>转型升级、跨越发展起到积极推动作用。</p>
+                <a href="#">
+                    <button id="show_more"
+                            style="color: white;background-color: #795548; border-radius: 30px; width: 120px; height: 50px">
+                        查看更多
+                    </button>
+                </a>
+                <img src="./Images/Index/AboutUs.png" id="about_us_img">
+            </div>
+            <div id="content2">
+                <h1 style="color: white; letter-spacing: 5px">2020年年度旅游商品设计大赛倒计时</h1>
+                <h3 style="color: antiquewhite">旅游商品最新动态，新赛事、新展会追踪预报</h3>
+                <img src="Images/Index/TheAwardCeremony.png" width="80%" style="vertical-align: middle"/>
+                <h2 align="center" style="color: white;">第三届秦皇岛旅游商品大赛圆满成功</h2>
+            </div>
         </div>
-        <div>
-            <h2 style="font-weight: bold" align="center">2020年年度旅游商品设计大赛倒计时</h2>
-            <h3 align="center">旅游商品最新动态，新赛事、新展会追 <span>Description 1</span>踪预报</h3>
-            <img src="Images/Index/TheAwardCeremony.png" width="80%" style="vertical-align: middle"/>
-            <h4 align="center">第三届秦皇岛旅游商品大赛圆满成功</h4>
+        <div id="content3">
+            <h2 style="letter-spacing: 3px; color: white">企业信息</h2>
+            <h3 style="color: white">相关服务动态信息</h3>
+            <div style="background-color: #795548" id="qiyejieshao1"><img src="./Images/Index/qiyejieshao.png"
+                                                                          style="position: relative; width: 60%; height: 60%; top: +15px">
+            </div>
+            <div id="bubble1">
+                <p style="position: relative;top: +30px">企业介绍</p>
+            </div>
+            <div style="background-color: #795548" id="qiyejieshao2"><img src="./Images/Index/ruzhuxuzhi.png"
+                                                                          style="position: relative; width: 60%; height: 60%; top: +15px">
+            </div>
+            <div id="bubble2">
+                <p style="position: relative;top: +30px">入驻须知</p>
+            </div>
+
+            <div style="background-color: #795548" id="qiyejieshao3"><img src="./Images/Index/shenbanzhinan.png"
+                                                                         style="position: relative; width: 60%; height: 60%; top: +15px">
+            </div>
+            <div id="bubble3">
+                <p style="position: relative;top: +30px">申办指南</p>
+            </div>
+            <div style="background-color: #795548" id="qiyejieshao4"><img src="./Images/Index/zhengcefagui.png"
+                                                                         style="position: relative; width: 60%; height: 60%; top: +15px">
+            </div>
+            <div id="bubble4">
+                <p style="position: relative;top: +30px">政策法规</p>
+            </div>
+            <div style="background-color: #795548" id="qiyejieshao5"><img src="./Images/Index/xiangguanzhichi.png"
+                                                                         style="position: relative; width: 60%; height: 60%; top: +15px">
+            </div>
+            <div id="bubble5">
+                <p style="position: relative;top: +30px">相关支持</p>
+            </div>
+            <div style="background-color: #795548" id="qiyejieshao6"><img src="./Images/Index/xiehuidongtai.png"
+                                                                         style="position: relative; width: 60%; height: 60%; top: +15px">
+            </div>
+            <div id="bubble6">
+                <p style="position: relative;top: +30px">协会动态</p>
+            </div>
         </div>
-        <div>
-            <h2 style="font-weight: bold" align="center">企业信息</h2>
-            <h3 align="center">相关服务动态信息</h3>
-        </div>-->
-    </center>
-    </center>
+        <div id="content4">
+                <a><img src="./Images/Index/qiyexinwen.jpg" id="qiyexinwen"></a>
+                <a><img src="./Images/Index/xiehuixinxi.jpg" id="xiehuixinxi"></a>
+                <a><img src="./Images/Index/shehuizeren.jpg" id="shehuizeren"></a>
+            <div id="jiuyejihui">
+                <p>就业机会</p>
+            </div>
+            <div id="shejifuwu">
+                <p>设计服务</p>
+            </div>
+            <div id="cansaibaoming">
+                <p>参赛报名</p>
+            </div>
+        </div>
+    </div>
+</center>
+</center>
 </body>
 </html>
